@@ -1,0 +1,51 @@
+@font-face {
+    src: url(../../assets/nasalization/nasalization-rg.ttf);
+    font-family: Nasa;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(170, 166, 166);
+    height: 80px;   
+}
+
+#search input {
+    width: 30%;
+    height: 34px;
+    font-weight: 500;
+    border: 1px solid #aaa6a6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2{
+    color:#192A46
+}
+
+
+@media screen and (min-device-width: 321px) and (max-device-width: 768px){
+    #search {
+        flex-direction: column;      
+    }
+    #search input{
+        width: 100%;
+        margin-bottom: 10px;
+    }  
+    #search h2{
+        align-self: baseline;
+    }
+}
+@media screen and (max-width: 320px){
+    #search {
+        flex-direction: column;      
+    }
+    #search input{
+        width: 100%;
+        margin-bottom: 10px;
+    }    
+
+}

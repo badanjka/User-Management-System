@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.infoAboutCandidate{
+    font-weight: bold;
+}
+.infoWrapper{
+    display: flex;
+    align-self: center;
+}
+.wrapper img {
+    width: 20%;
+}
+.col{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.name{
+    display: flex;
+}
+div > ul > li{
+    list-style-type: none;
+}
+
+
+

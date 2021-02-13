@@ -1,0 +1,39 @@
+#candidateUser {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    margin-right: 4px;
+}
+
+#candidateUser img {
+    width: 100%;   
+}
+
+#image {
+    
+    width: 83px;   
+    margin-right: 12px;
+    margin-left: 3px;
+}
+
+.userPreferences{
+    font-size: 20px;
+    color: rgb(39, 86, 131);
+    margin-bottom: 4px;
+} 
+
+#candidateUser:hover {
+    color: #ffffff;
+    background-color: #aec6db;
+    cursor: pointer;
+}
+
+.selected {
+   color: #ffffff;
+    background-color: #518FCA;
+}
+
+.userEmail{
+    font-size: 15px;
+    margin-top: 0px;
+}

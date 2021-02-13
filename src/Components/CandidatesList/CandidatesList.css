@@ -1,0 +1,37 @@
+#candidatesList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+}
+
+#candidates {
+    margin: auto;
+    margin-top: 30px;
+    width: 64%;
+}
+
+#candidateSearch {
+    width: 30%;
+    height: 34px;
+    font-weight: 500;
+    border: 1px solid #aaa6a6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.searchwrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#candidateButton {
+    margin-left: 74%;
+    background-color: #376884;
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    font-weight: bold;
+    width: 100px;
+}

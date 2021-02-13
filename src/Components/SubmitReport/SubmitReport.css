@@ -1,0 +1,42 @@
+#select {
+    display: flex;    
+}
+
+#wrapper {
+    width: 65%;
+    margin-left: 30px;
+   margin: auto;
+   color: #14213F;
+}
+
+.wrappers {
+    width: 33%;
+}
+
+.wrappers input {
+    width: 80%;
+    margin-right: 20px;
+}
+.wrappers select {
+    width: 80%;
+}
+
+textarea {
+    width: 92%;
+}
+
+#reportButtons {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.click{
+    width: 12%;
+    background-color: #376884;
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    font-weight: bold;
+}

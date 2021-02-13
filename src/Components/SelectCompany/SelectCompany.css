@@ -1,0 +1,45 @@
+
+.reportButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.buttonNext, .buttonBack{
+    width: 12%;
+    background-color: #376884;
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    font-weight: bold;    
+}
+
+.companyTable{
+    color: #14213F;
+    border: 1px solid black;  
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.companyWrapper{
+    width: 60%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.searchWrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.companySearch{
+    width: 30%;
+    height: 34px;
+    font-weight: 500;
+    border: 1px solid #aaa6a6;
+    border-radius: 5px;
+    text-align: center;
+}
+

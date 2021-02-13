@@ -1,0 +1,12 @@
+@font-face {
+    src: url("./assets/roboto/Roboto-Light.ttf");
+    font-family: Anti Corona;
+}
+/* *{
+    font-family: 'Roboto', sans-serif;
+} */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
