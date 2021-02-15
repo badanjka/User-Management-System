@@ -3,8 +3,8 @@ import "./CandidatePage.css"
 import Candidate from "../../Components/Candidate/Candidate"
 import ReportTable from '../../Components/ReportTable/ReportTable'
 import { ReportOverview } from "../../Components/ReportOverview/ReportOverview"
-import { Route } from 'react-router-dom';
 import { Header } from '../../Components/Header/Header';
+import apiUrl from '../../config';
 
 
 class ScndPage extends Component {
@@ -34,7 +34,7 @@ class ScndPage extends Component {
     }
     getData = () => {
         const candidateId = this.props.match.params.id;
-        fetch("http://localhost:3333/api/candidates/" + candidateId)
+        fetch(apiUrl + 'api/candidates/' + candidateId)
             .then(data => data.json())
             .then(
                 (result) => {
@@ -48,7 +48,7 @@ class ScndPage extends Component {
             )
     }
     getCandidateReport = (candidateId) => {
-        fetch("http://localhost:3333/api/reports")
+        fetch(apiUrl + "api/reports")
             .then(data => data.json())
             .then(
                 (result) => {

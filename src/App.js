@@ -19,7 +19,6 @@ class App extends Component {
   loginData = (data) => {
     this.setState({
       token: data.accessToken,
-
     })
   }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import "./Login.css"
+import apiUrl from  '../../config';
 
 class Login extends Component {
 
@@ -16,7 +17,7 @@ class Login extends Component {
     }
 
     postData = () => {
-        fetch("http://localhost:3333/login",
+        fetch(apiUrl + "login",
             {
                 method: "POST",
                 headers: {
@@ -34,10 +35,12 @@ class Login extends Component {
     render() {
         return (
             <>
-            <div className="loginInfo">info about login: <br></br>
-                                        username:dev@dev.com <br></br>
-                                        password:developer
-            </div>
+            <div className="loginInfo">
+                                        Username: <br></br>
+                                        dev@dev.com <br></br>
+                                        Password:<br></br>
+                                        developer
+            </div>  
             <div id="loginForm">
                 {this.props.token && <Redirect from="/" to="/admin"></Redirect>}
                 <p>Username:</p>

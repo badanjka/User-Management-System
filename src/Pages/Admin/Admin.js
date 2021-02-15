@@ -3,7 +3,7 @@ import Header2 from '../../Components/Header2/Header2'
 import { Search } from '../../Components/Search/Search'
 import ListReports from '../../Components/ListReports/ListReports';
 import { ReportOverview } from "../../Components/ReportOverview/ReportOverview"
-// import { Link } from "react-router-dom"
+import apiUrl from '../../config';
 
 class Admin extends Component {
     state = {
@@ -28,7 +28,7 @@ class Admin extends Component {
     }
 
     componentDidMount = () => {
-        fetch("http://localhost:3333/api/reports")
+        fetch(apiUrl+ "api/reports")
             .then(response => response.json())
             .then(
                 (result) => {

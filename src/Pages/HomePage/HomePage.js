@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { UserList } from "../../Components/UserList/UserList"
 import { Search } from "../../Components/Search/Search"
-// import { candidatesData, getData } from "../../communicator";
 import "./HomePage.css"
 import { Header } from "../../Components/Header/Header"
-
+import apiUrl from '../../config';
 class HomePage extends Component {
 
     state = {
@@ -14,7 +13,7 @@ class HomePage extends Component {
     }
 
     componentDidMount = () => {
-        fetch("http://localhost:3333/api/candidates")
+        fetch(apiUrl + 'api/candidates')
             .then(response => response.json())
             .then(results => this.setState({
                 Users: results,

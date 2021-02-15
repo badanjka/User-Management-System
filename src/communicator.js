@@ -1,15 +1,17 @@
+import apiUrl from './config.js';
+const communicatorUrl = apiUrl + 'api/';
 export const getData = (url) => {
-    return fetch("http://localhost:3333/api/" + url)
+    return fetch(communicatorUrl + url)
         .then(response => response.json())
 }
 export const getCompany = () => {
-    return fetch("http://localhost:3333/api/companies")
+    return fetch(communicatorUrl + 'companies')
         .then(response => response.json())
 }
 
 export const saveReport = (savedReport, token) => {
-    console.log(savedReport, "savedReport")
-    fetch("http://localhost:3333/api/reports", {
+    console.log(savedReport, 'savedReport')
+    fetch(communicatorUrl + 'reports', {
         method: 'POST',
         body: JSON.stringify({    
             "candidateId": savedReport.id,

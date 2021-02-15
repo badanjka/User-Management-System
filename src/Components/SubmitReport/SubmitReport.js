@@ -8,7 +8,8 @@ class SubmitReport extends Component {
         date: "",
         phase: "",
         status: "",
-        note: ""
+        note: "",
+        success: false
     }
 
     handleSubmit = (event) => {
@@ -25,6 +26,9 @@ class SubmitReport extends Component {
                 this.state.status,
                 this.state.note
             )
+            this.setState({
+                success: true
+            })
         })   
     }
 
@@ -56,6 +60,7 @@ class SubmitReport extends Component {
                 </div>
                 <p>Notes:</p>
                 <textarea  rows="6" required name="note"></textarea>
+                <p className="submitted">{ this.state.success ? "Succesfully submited report" : '' }</p>
                 <div id="reportButtons">
                     <button className="click" onClick={this.props.backToSelectCompany}>Back</button>
                     <button  className="click" >Submit</button>
